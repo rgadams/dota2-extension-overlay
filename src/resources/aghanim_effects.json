@@ -1,0 +1,2016 @@
+{
+    "1": {
+        "name": "Anti-Mage",
+        "scepter_effect": {
+            "type": "ability",
+            "name": "Blink Fragment"
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Counterspell",
+            "description": "Successful Counterspell creates an illusion attacking the caster for 5 seconds. Removes Counterspell manacost."
+        }
+    },
+    "2": {
+        "name": "Axe",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Battle Hunger",
+            "description": "Battle Hunger also reduces enemy armor by 7 and grants Axe 7 armor per affected targeted.",
+            "notes": [
+                {
+                    "title": "Damage output reduction",
+                    "value": "0 ⇒ 30%"
+                },
+                {
+                    "title": "Area of Effect",
+                    "value": "0 ⇒ 400"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Counter Helix",
+            "description": "Causes Axe's attacks to have a chance to proc a Counter Helix. Attack procs ignore Counter Helix cooldown. Increases attack speed by 35."
+        }
+    },
+    "3": {
+        "name": "Bane",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Brain Sap",
+            "description": "Decreases cooldown and makes Brain Sap pierce Spell Immunity.",
+            "notes": [
+                {
+                    "title": "Cooldown",
+                    "value": "14/13/12/11 ⇒ 1.5"
+                },
+                {
+                    "title": "Cast Point",
+                    "value": "0.4 ⇒ 0.2"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Fiend's Grip",
+            "description": "Fiend's Grip now creates an uncontrollable illusion that is also channeling Fiend's Grip on the target. Illusion takes incoming damage and immediately dies if they are interrupted."
+        }
+    },
+    "4": {
+        "name": "Bloodseeker",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Rupture",
+            "description": "Grants 2 charges to Rupture with a 40 seconds replenish time.",
+            "notes": [
+                {
+                    "title": "Charges",
+                    "value": "0 ⇒ 2"
+                },
+                {
+                    "title": "Charge Replenish Time",
+                    "value": "0 ⇒ 40"
+                },
+                {
+                    "title": "Cooldown",
+                    "value": "70 ⇒ 0"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Bloodrage",
+            "description": "Bloodrage attacks now deal 2% of the target's max health as pure damage and heals Bloodseeker for that amount. Only works for Bloodseeker."
+        }
+    },
+    "5": {
+        "name": "Crystal Maiden",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Freezing Field",
+            "description": "Applies Frostbite to any unit that has been standing in the Freezing Field for over a set amount of time.",
+            "notes": [
+                {
+                    "title": "Frostbite Timer",
+                    "value": "0 ⇒ 1.75"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Frostbite",
+            "description": "Frostbite can be cast on yourself, reducing incoming damage by 70% for the duration. She is unable to move or attack during that time. Allows casting Frostbite while channeling as long as the target is within range. Reduces cooldown by 1."
+        }
+    },
+    "6": {
+        "name": "Drow Ranger",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Marksmanship",
+            "description": "Causes Drow Ranger's attacks to splinter on the target, hitting nearby units with normal attacks that deal reduced damage.",
+            "notes": [
+                {
+                    "title": "Splinter Search Radius",
+                    "value": "0 ⇒ 375"
+                },
+                {
+                    "title": "Max Splinter Targets:",
+                    "value": "0 ⇒ 2"
+                },
+                {
+                    "title": "Splinter Damage Reduction",
+                    "value": "0 ⇒ 50%"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Frost Arrows",
+            "description": "Frost Arrows now apply Hypothermia stack to enemy heroes, reducing their regeneration by 10% per stack. Increases damage by 5 per stack. Lasts 7 seconds. If an enemy hero dies with Hypothermia stacks, they burst and deal 60 magic damage per stack and 25% slow for 2 seconds to enemies within 650 radius. Max Stacks: 7"
+        }
+    },
+    "7": {
+        "name": "Earthshaker",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Enchant Totem",
+            "description": "Enchant Totem becomes a 1100 range ground target ability, causing Earthshaker to jump in the air and land at the target spot, casting Enchant Totem there. Self-casting the ability will behave in the original form, without jumping.",
+            "notes": [
+                {
+                    "title": "Cast Range",
+                    "value": "0 ⇒ 900"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Fissure",
+            "description": "Reduces Fissure cooldown by 2 seconds and allows Earthshaker to walk on it. When he casts an ability, an aftershock is released along its path."
+        }
+    },
+    "8": {
+        "name": "Juggernaut",
+        "scepter_effect": {
+            "type": "ability",
+            "ability_name": "Swiftslash"
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Blade Fury",
+            "description": "Increases movement speed during Blade Fury by 100 and attacks a random nearby unit once per second dealing damage."
+        }
+    },
+    "9": {
+        "name": "Mirana",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Sacred Arrow",
+            "description": "Causes Sacred Arrow to release Starstorm projectiles of the current onto enemies within 500 range of it as it travels. Releases an extra meteorite for the enemy hit by the arrow."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Leap",
+            "description": "Grants +1 Leap Charge. Leap buff grants Mirana 1.5x Critical Strike attacks for its duration."
+        }
+    },
+    "11": {
+        "name": "Shadow Fiend",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Requiem of Souls",
+            "description": "Increases Necromastery Max Souls and causes Requiem of Souls to return back to Shadow Fiend. The wave back to Shadow Fiend deals less damage, but heals Shadow Fiend for all the damage it dealt.",
+            "notes": [
+                {
+                    "title": "Damage & Heal per Line on Return",
+                    "value": "0 ⇒ 32/48/64"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Necromastery",
+            "description": "Necromastery provides 0.75% Spell Amp per soul."
+        }
+    },
+    "10": {
+        "name": "Morphling",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Morph",
+            "description": "Allows targeting allied heroes. While Morphed, you gain Cast Range increase.",
+            "notes": [
+                {
+                    "titile": "Target",
+                    "value": "Enemies ⇒ Allies/Enemies"
+                },
+                {
+                    "title": "Replicate Cast Range Increase",
+                    "value": "0 ⇒ 600"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Adaptive Strike (Agility)",
+            "description": "Causes Adaptive Strike to have +1 Multishot and removes the 3 second shared cooldown between the two different abilities. Prioritizes heroes."
+        }
+    },
+    "12": {
+        "name": "Phantom Lancer",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Juxtapose",
+            "description": "Can be cast to destroy all currently active Juxtapose illusions, and then quickly creates the max amount of illusions around Phantom Lancer with an increased duration.",
+            "notes": [
+                {
+                    "title": "Extra Duration",
+                    "value": "10"
+                },
+                {
+                    "title": "Mana cost",
+                    "value": "75"
+                },
+                {
+                    "title": "Cooldown",
+                    "value": "60"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Spirit Lance",
+            "description": "Increases Spirit Lance illusion damage dealt by 20% and causes the projectile to bounce to another unit within 900 radius, prioritizing heroes."
+        }
+    },
+    "13": {
+        "name": "Puck",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Dream Coil",
+            "description": "Increases damage from coil breaks, increases coil duration, coil break stun goes through spell immunity.",
+            "notes": [
+                {
+                    "title": "Link Break Damage",
+                    "value": "100/150/200 ⇒ 200/250/300"
+                },
+                {
+                    "title": "Link Break Stun Duration",
+                    "value": "1.5/2.25/3 ⇒ 1.5/3/4.5"
+                },
+                {
+                    "title": "Coil Duration",
+                    "value": "6 ⇒ 8"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Waning Rift",
+            "description": "Waning Rift now deals 70 bonus damage and knocks enemies back 250 distance over 0.4 seconds (non-interrupting). Reveals invisible enemy units and wards in the area for 5 seconds."
+        }
+    },
+    "14": {
+        "name": "Pudge",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Rot",
+            "description": "Increases Rot radius by 200, damage per second by 80, and causes it to reduce enemy health restoration by 25%."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Dismember",
+            "description": "Allows  Dismember to be cast on an allied hero, swallowing them. While swallowed, the ally is invulnerable and hidden, and gets 6% of their max health regenerated per second. Grants Pudge the Eject sub-ability. Has halved cooldown when cast on allies."
+        }
+    },
+    "15": {
+        "name": "Razor",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Eye of the Storm",
+            "description": "Causes Eye of the Storm to strike two different units instead of one and can damage structures. When striking buildings, it will only target towers, barracks, and the Ancient."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Storm Surge",
+            "description": "Causes Storm Surge to have a 18% chance when attacked, and always when targeted with a spell, to release a forked lightning that strikes the target and up to 2 other enemies. Deals 120 damage and slows them by 50% for 1.5 seconds."
+        }
+    },
+    "16": {
+        "name": "Sand King",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Burrowstrike",
+            "description": "Adds Caustic Finale poison to heroes hit by your Burrowstrike and increases its cast range. Does not apply Caustic Finale to illusions.",
+            "notes": [
+                {
+                    "title": "Cast Range",
+                    "value": "350/450/550/650 ⇒ 700/900/1100/1300"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Epicenter",
+            "description": "Every 700 units moved causes an Epicenter Pulse around Sand King in 400 AoE."
+        }
+    },
+    "17": {
+        "name": "Storm Spirit",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Electric Vortex",
+            "description": "Electric Vortex affects all enemies within a radius around Storm Spirit.",
+            "notes": [
+                {
+                    "title": "Area of Effect",
+                    "value": "0 ⇒ 475"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Electric Rave"
+        }
+    },
+    "18": {
+        "name": "Sven",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Storm Hammer",
+            "description": "Increases cast range and transports Sven along the storm hammer.",
+            "notes": [
+                {
+                    "title": "Cast Range",
+                    "value": "600 ⇒ 1100"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Storm Hammer",
+            "description": "Storm Hammer now applies a dispel on enemies."
+        }
+    },
+    "19": {
+        "name": "Tiny",
+        "scepter_effect": {
+            "type": "ability",
+            "ability_name": "Tree Volley"
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Craggy Exterior"
+        }
+    },
+    "20": {
+        "name": "Vengeful Spirit",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Vengeance Aura",
+            "description": "Causes Vengeance Aura to create a strong illusion of Vengeful Spirit upon dying, that can cast her abilities, deals and takes 100% damage, and moves 30% faster. Continuously moves Vengeful Spirit around with the illusion while she is dead, and allows hero to still gain experience while dead, as long as the illusion is alive. If the illusion is alive as she respawns, she takes the illusion's place."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Wave of Terror",
+            "description": "Wave of Terror steals 25% of enemy hero base damage and grants it to Vengeful Spirit for the debuff duration."
+        }
+    },
+    "21": {
+        "name": "Windranger",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Windrun",
+            "description": "Grants 2 charges to Windrun, increases movement speed, and removes movement speed limit",
+            "notes": [
+                {
+                    "title": "Move Speed Bonus",
+                    "value": "60% ⇒ 105%"
+                },
+                {
+                    "title": "Number of Charges",
+                    "value": "0 ⇒ 2"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Powershot",
+            "description": "Powershot now becomes global, but only hits heroes beyond its default range (max 1 hero). Impacted heroes will be killed if they are under 13% after taking the impact damage (scales based on Powershot channel)."
+        }
+    },
+    "22": {
+        "name": "Zeus",
+        "scepter_effect": {
+            "type": "ability",
+            "ability_name": "Nimbus"
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Static Field",
+            "description": "Static Field can be cast to perform a Heavenly Jump, shocking the closest visible enemy (prioritizing heroes) within 2000 range, dealing Static Field damage to them and reducing their movement speed by 100% for 2.5 seconds. If Zeus is moving forward, he will jump towards that direction. Cooldown: 14. Manacost: 100."
+        }
+    },
+    "23": {
+        "name": "Kunkka",
+        "scepter_effect": {
+            "type": "ability",
+            "ability_name": "Torrent Storm"
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Tidal Wave"
+        }
+    },
+    "25": {
+        "name": "Lina",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Laguna Blade",
+            "description": "Changes Laguna Blade's damage type to Pure, and allows it to slice through spell immunity."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Laguna Blade",
+            "description": "Increases Laguna Blade's cast range by 150 and causes it to go the full cast length and hit all units along the way. Can be ground targeted."
+        }
+    },
+    "31": {
+        "name": "Lich",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Sinister Gaze",
+            "description": "Casts Sinister Gaze in a target area.",
+            "notes": [
+                {
+                    "title": "Area of Effect",
+                    "value": "0 ⇒ 400"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Ice Spire"
+        }
+    },
+    "26": {
+        "name": "Lion",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Finger of Death",
+            "description": "Increases damage. Decreases cooldown. Finger of Death hits all units in a small area.",
+            "notes": [
+                {
+                    "title": "Damage Radius",
+                    "value": "0 ⇒ 325"
+                },
+                {
+                    "title": "Damage",
+                    "value": "600/725/850 ⇒ 725/875/1025"
+                },
+                {
+                    "title": "Cooldown",
+                    "value": "160/100/40 ⇒ 100/60/20"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Mana Drain",
+            "description": "Causes Mana Drain grants true sight over the enemy and reduces their attack speed by 120."
+        }
+    },
+    "27": {
+        "name": "Shadow Shaman",
+        "scepter_effect": {
+            "type": "Mass Serpent Ward",
+            "ability_name": "",
+            "description": "",
+            "notes": [
+                {
+                    "title": "Wards Attack Targets",
+                    "value": "1 ⇒ 2"
+                },
+                {
+                    "title": "Wards Attack Range",
+                    "value": "650 ⇒ 875"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Shackles",
+            "description": "Shackles creates Serpent Wards attacking the target. Increases Shackles cast range by 150. Lasts 7 seconds."
+        }
+    },
+    "28": {
+        "name": "Slardar",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Slithereen Crush",
+            "description": "Whenever Slardar casts Slithereen Crush, he creates a puddle of water that is considered a river for movement and bonuses. Provides additional HP Regen, Armor and Status Resistance while in a puddle or in the river.",
+            "notes": [
+                {
+                    "title": "Puddle / River HP Regen",
+                    "value": "0 ⇒ 25"
+                },
+                {
+                    "title": "Puddle / River Armor",
+                    "value": "0 ⇒ 12"
+                },
+                {
+                    "title": "Puddle / River Status Resistance",
+                    "value": "0 ⇒ 40%"
+                },
+                {
+                    "title": "Puddle Radius",
+                    "value": "0 ⇒ 550"
+                },
+                {
+                    "title": "Puddle Duration",
+                    "value": "0 ⇒ 25"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Slithereen Crush",
+            "description": "Slithereen Crush icon.pngCauses Corrosive Haze to be applied for 5 seconds to units hit with Slithereen Crush."
+        }
+    },
+    "29": {
+        "name": "Tidehunter",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Gush",
+            "description": "Gush becomes a ground targeted wave ability that affects enemy units in a line. Decreases cooldown.",
+            "notes": [
+                {
+                    "title": "Cast Range",
+                    "value": "700 ⇒ 2200"
+                },
+                {
+                    "title": "Wave Length",
+                    "value": "0 ⇒ 2200"
+                },
+                {
+                    "title": "Wave Width",
+                    "value": "0 ⇒ 260"
+                },
+                {
+                    "title": "Projectile Speed",
+                    "value": "4000 ⇒ 1500"
+                },
+                {
+                    "title": "Cooldown",
+                    "value": "12 ⇒ 7"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Anchor Smash",
+            "description": "Increases Anchor Smash damage by 90 and causes it to affect buildings. Reduces cooldown by 1 second."
+        }
+    },
+    "30": {
+        "name": "Witch Doctor",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Death Ward",
+            "description": "Death Ward attacks have True Strike and bounce between nearby enemies."
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Voodoo Switcheroo"
+        }
+    },
+    "32": {
+        "name": "Riki",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Tricks of the Trade",
+            "description": "Increases duration, attacks, cast range and allows you to target an allied hero, hiding inside them for the duration.",
+            "notes": [
+                {
+                    "title": "Max Channel Time",
+                    "value": "2 ⇒ 3"
+                },
+                {
+                    "title": "Cast Range",
+                    "value": "400 ⇒ 1000"
+                },
+                {
+                    "title": "Attack Count",
+                    "value": "4 ⇒ 6"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Sleeping Dart"
+        }
+    },
+    "33": {
+        "name": "Enigma",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Black Hole",
+            "description": "Adds the current level of Midnight Pulse to Black Hole."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Black Hole",
+            "description": "Black Hole does a non-interrupting pull towards it in a 1200 AoE. Pulls at a rate of 175."
+        }
+    },
+    "34": {
+        "name": "Tinker",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Laser",
+            "description": "Increases  Laser cast range by 400, causes it to reduce the target's current health and model size by 20% (stacking), and makes it bounce to the furthest enemy within 700 radius of the primary target, prioritizing heroes."
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Defense Matrix"
+        }
+    },
+    "35": {
+        "name": "Sniper",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Assassinate",
+            "description": "Causes Assassinate to fire quicker and disable the enemy target.",
+            "notes": [
+                {
+                    "title": "Cast Time",
+                    "value": "2 ⇒ 1"
+                },
+                {
+                    "title": "Stun Duration",
+                    "value": "0.01 ⇒ 1/1.25/1.5"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Concussive Grenate"
+        }
+    },
+    "36": {
+        "name": "Necrophos",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Ghost Shroud",
+            "description": "Reduces Ghost Shroud cooldown to 10 seconds"
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Death Seeker"
+        }
+    },
+    "37": {
+        "name": "Warlock",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Chaotic Offering",
+            "description": "Calls 2 golems with reduced stats and bounty.",
+            "notes": [
+                {
+                    "title": "Golem Health",
+                    "value": "1000/1500/2000 ⇒ 750/1125/1500"
+                },
+                {
+                    "title": "Golem Attack Damage",
+                    "value": "75/100/125 ⇒ 56/75/94"
+                },
+                {
+                    "title": "Golem Gold Bounty",
+                    "value": "100/150/200 ⇒ 50/75/100"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Shadow Word",
+            "description": "Shadow Word grants 20% movement speed bonus to allies and slows enemies by 20%."
+        }
+    },
+    "38": {
+        "name": "Beastmaster",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Wild Axes",
+            "description": "Causes Wild Axes to have no cooldown, and can be used again once they come back."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Call of the Wild Hawk",
+            "description": "Hawks become controllable and gain Dive Bomb. Dive Bomb: Channels for 1 second, revealing itself, and then flying towards the target enemy, dealing damage and stunning them for 1 second, killing the hawk."
+        }
+    },
+    "39": {
+        "name": "Queen of Pain",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Sonic Wave",
+            "description": "Increases damage and decreases cooldown.",
+            "notes": [
+                {
+                    "title": "Damage",
+                    "value": "290/380/470 ⇒ 325/440/555"
+                },
+                {
+                    "title": "Cooldown",
+                    "value": "135 ⇒ 40"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Blink",
+            "description": "Releases a sonic boom when Queen of Pain blinks, at both her starting and ending locations. Deals 150 damage in a 300 AoE and silences for 1.5 seconds."
+        }
+    },
+    "40": {
+        "name": "Venomancer",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Poison Nova",
+            "description": "Increases damage and decreases cooldown.",
+            "notes": [
+                {
+                    "title": "Damage per Second",
+                    "value": "30/55/80 ⇒ 60/85/110"
+                },
+                {
+                    "title": "Cooldown",
+                    "value": "140/120/100 ⇒ 100/80/60"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Venomous Gale",
+            "description": "Causes Venomous Gale to summon two Plague Wards when it impacts an enemy hero. Increases travel range by 400."
+        }
+    },
+    "41": {
+        "name": "Faceless Void",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Time Walk",
+            "description": "Applies a Time Lock proc to all units at the landing destination.",
+            "notes": [
+                {
+                    "title": "Area of Effect",
+                    "value": "350"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Reverse Time Walk",
+            "description": "Increases Time Walk cast range by 200."
+        }
+    },
+    "42": {
+        "name": "Wraith King",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Reincarnation",
+            "description": "If a nearby allied hero is slain, they will be transformed into a wraith and have their death delayed for 7 seconds. Buffs the transformed units with +75 attack speed and +25% movement speed."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Reincarnation",
+            "description": "Causes Reincarnation to have no mana cost and spawn three skeletons to attack each nearby enemy hero when Reincarnation is triggered."
+        }
+    },
+    "43": {
+        "name": "Death Prophet",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Exorcism",
+            "description": "Whenever an enemy is affected by your spells or when you attack an enemy, a ghost will fly out, slow and hit the enemy for bonus its usual damage then return to you with life.",
+            "notes": [
+                {
+                    "title": "Spirit Slow Duration",
+                    "value": "0.3"
+                },
+                {
+                    "title": "Sprit Bonus Damage",
+                    "value": "50%"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Spirit Siphon",
+            "description": "Drains 0.75 armor per second and gives it to Death Prophet. Armor gain/loss lasts for 14 seconds."
+        }
+    },
+    "44": {
+        "name": "Phantom Assassin",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Blur",
+            "description": "Causes Blur to have instant cast time and applies a dispel. Anytime you get a hero kill, your abilities are refreshed. Reduces Blur cooldown and increases Fade Time to 0.75.",
+            "notes": [
+                {
+                    "title": "Cooldown",
+                    "value": "10"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Fan of Knives"
+        }
+    },
+    "45": {
+        "name": "Pugna",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Life Drain",
+            "description": "Removes cooldown and increases damage.",
+            "notes": [
+                {
+                    "title": "Health Drain per Second",
+                    "value": "150/225/300 ⇒ 200/300/400"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Life Drain",
+            "description": "When cast on an enemy, causes  Life Drain to create new Life Drain links on other enemy heroes within cast range +200 for every 1.75 seconds spent channeling. The channeling only ends if there are no links up anymore, or the channel duration runs out."
+        }
+    },
+    "46": {
+        "name": "Templar Assassin",
+        "scepter_effect": {
+            "type": "ability",
+            "ability_name": "Psionic Projection"
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Psionic Trap",
+            "description": "Causes Psionic Trap to silence enemies for up to 3 seconds based on how long the trap has been charged. Increases max trap count by 4."
+        }
+    },
+    "47": {
+        "name": "Viper",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Viper Strike",
+            "description": "Decreases mana cost and cooldown, and increases cast range.",
+            "notes": [
+                {
+                    "title": "Cast Range",
+                    "value": "500 ⇒ 900"
+                },
+                {
+                    "title": "Cooldown",
+                    "value": "10"
+                },
+                {
+                    "title": "Mana Cost",
+                    "value": "125/175/250 ⇒ 125"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Poison Attack",
+            "description": "Causes Poison Attack to lower armor by 1.5 per stack and increases max stacks by 3."
+        }
+    },
+    "48": {
+        "name": "Luna",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Eclipse",
+            "description": "Allows Luna to cast Eclipse on an allied unit or herself and have its effects follow them, or cast it on an area. Also increases total beams and duration, removes the limit on beams per unit, and makes the beams appear twice as fast.",
+            "notes": [
+                {
+                    "title": "Cast Range",
+                    "value": "2500"
+                },
+                {
+                    "title": "Number of Beams",
+                    "value": "5/8/11 ⇒ 6/12/18"
+                },
+                {
+                    "title": "Max Beams per Unit",
+                    "value": "5 ⇒ 6/12/18"
+                },
+                {
+                    "title": "Beam Interval",
+                    "value": "0.6 ⇒ 0.3"
+                },
+                {
+                    "title": "Eclipse Duration",
+                    "value": "2.4/4.2/6 ⇒ 1.5/3.3/5.1"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Lucent Beam",
+            "description": "Allows Lucent Beam to be ground targeted with a target search radius. Also increases stun duration to 1.2 second and grants Luna +30% bonus movement speed for 3 seconds."
+        }
+    },
+    "49": {
+        "name": "Dragon Knight",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Elder Dragon Form",
+            "description": "Increases the level of your ultimate. Adds a 4th level, Black Dragon. Black Dragon has bonus Corrosive Damage, Splash Damage, and Slow amount, free pathing and grants additional Magic resistance."
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Fireball"
+        }
+    },
+    "50": {
+        "name": "Dazzle",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Shadow Wave",
+            "description": "Increases Shadow Wave's heal, damage, and causes it to apply a basic dispel on allies",
+            "notes": [
+                {
+                    "title": "Heal Increase",
+                    "value": "60"
+                },
+                {
+                    "title": "Damage Increase",
+                    "value": "80"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Bad Juju",
+            "description": "Causes Dazzle to launch an attack at the three closest enemies within 1200 range each time he casts an ability."
+        }
+    },
+    "51": {
+        "name": "Clockwerk",
+        "scepter_effect": {
+            "type": "ability",
+            "ability_name": "Overclocking"
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Jetpack"
+        }
+    },
+    "52": {
+        "name": "Leshrac",
+        "scepter_effect": {
+            "type": "ability",
+            "ability_name": "Nihilism"
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Split Earth",
+            "description": "Causes Split Earth to repeat in the same location two additional times, with a 5 second delay between each one. Each time the radius increases by 75. Split Earth echo location is visible to both teams."
+        }
+    },
+    "53": {
+        "name": "Nature's Prophet",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Wrath of Nature",
+            "description": "Lowers cooldown from 85 to 60. Roots and Disarms all enemies it hits. Duration scales from 1.6 up to 3.4 seconds at max bounce."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Sprout",
+            "description": "Causes the first two trees destroyed with Sprout to summon Greater Treants. Can only have two Greater Treants alive."
+        }
+    },
+    "54": {
+        "name": "Lifestealer",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Infest",
+            "description": "Allows Infesting enemy heroes for 4 seconds, attacking their inside once every 1.25 seconds and doubling Lifestealer's regen rate. Increases cast range to 500 and reduces cooldown to 25 seconds."
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Open Wounds"
+        }
+    },
+    "55": {
+        "name": "Dark Seer",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Ion Shell",
+            "description": "Replaces Ion Shell's cooldown with 2 charges that has a 9 second replenish time, grants 350 max health to allied targets, and increases its duration by 20."
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Normal Punch"
+        }
+    },
+    "56": {
+        "name": "Clinkz",
+        "scepter_effect": {
+            "type": "ability",
+            "ability_name": "Burning Army"
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Skeleton Walk",
+            "description": "Causes Skeleton Walk to create two Burning Army Skeletons."
+        }
+    },
+    "57": {
+        "name": "Omniknight",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Guardian Angel",
+            "description": "Increases duration, provides HP regen, radius becomes global and affects buildings.",
+            "notes": [
+                {
+                    "title": "Radius",
+                    "value": "600 ⇒ Global"
+                },
+                {
+                    "title": "Health Regen Bonus",
+                    "value": "0 ⇒ 40"
+                },
+                {
+                    "title": "Duration",
+                    "value": "6/7/8 ⇒ 8/9/10"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Hammer of Purity"
+        }
+    },
+    "58": {
+        "name": "Enchantress",
+        "scepter_effect": {
+            "type": "ability",
+            "ability_name": "Sproink"
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Nature's Attendants",
+            "description": "Adds 3 permanent Nature's Attendants that follow Enchantress around."
+        }
+    },
+    "59": {
+        "name": "Huskar",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Life Break",
+            "description": "Forces the enemy target to attack you for 3 seconds and increases cast range by 300."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Inner Fire",
+            "description": "Causes Inner Fire to reduce healing and regeneration by 50% and applies a 40% movement speed slow. Lowers cooldown by 3 seconds."
+        }
+    },
+    "60": {
+        "name": "Night Stalker",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Void",
+            "description": "Causes Void to be an AoE ability. Increases the ministun duration.",
+            "notes": [
+                {
+                    "title": "Radius",
+                    "value": "900"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Hunter in the Night",
+            "description": "During night time, Night Stalker can cast Hunter in the Night. Consumes a lesser creature, instantly killing it and restoring 25% of Night Stalker's maximum HP and mana. Can only be cast on non-player units. Cooldown: 20"
+        }
+    },
+    "61": {
+        "name": "Broodmother",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Spin Web",
+            "description": "Increases movement speed, removes movement speed limit, and increases Spin Web max count.",
+            "notes": [
+                {
+                    "title": "Max Amount of Webs",
+                    "value": "2/4/6/8 ⇒ 8/12/16/20"
+                },
+                {
+                    "title": "Move Speed Bonus",
+                    "value": "25%/40%/55%/70% ⇒ 40%/60%/80%/100%"
+                },
+                {
+                    "title": "Number of Charges",
+                    "value": "2/4/6/8 ⇒ 8/12/16/20"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Silken Bola"
+        }
+    },
+    "62": {
+        "name": "Bounty Hunter",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Shuriken Toss",
+            "description": "Applies Jinada to Shuriken Toss, reduces cooldown to 6 and increases cast range to 650."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Track",
+            "description": "Allies now gain 50% of Track Speed boost. Provides 600 vision around the target for Bounty Hunter's team."
+        }
+    },
+    "63": {
+        "name": "Weaver",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Time Lapse",
+            "description": "Reduces cooldown, and allows Weaver to cast Time Lapse on an ally.",
+            "notes": [
+                {
+                    "title": "Cast Range",
+                    "value": "600"
+                },
+                {
+                    "title": "Cooldown",
+                    "value": "60/50/40 ⇒ 20"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "The Swarm",
+            "description": "Reduces cooldown by 4. Causes The Swarm to latch onto and reveal invisible units."
+        }
+    },
+    "64": {
+        "name": "Jakiro",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Macropyre",
+            "description": "Increases flame length, duration, and damage.",
+            "notes": [
+                {
+                    "title": "Cast Range",
+                    "value": "900 ⇒ 1800"
+                },
+                {
+                    "title": "Path Distance",
+                    "value": "900 ⇒ 1800"
+                },
+                {
+                    "title": "Damage per Second",
+                    "value": "6100/140/180 ⇒ 125/175/22500"
+                },
+                {
+                    "title": "Duration",
+                    "value": "10 ⇒ 30"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Liquid Frost"
+        }
+    },
+    "65": {
+        "name": "Batrider",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Flaming Lasso",
+            "description": "Flaming Lasso grabs both its target, as well as the target's nearest allied hero within range. The secondary target is tethered to the first.",
+            "notes": [
+                {
+                    "title": "Secondary Target Search Radius",
+                    "value": "0 ⇒ 550"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Flaming Lasso",
+            "description": "Allows Flaming Lasso to be cast on an allied hero, granting them 80% damage reduction. Has 20 second cooldown when used on allies."
+        }
+    },
+    "66": {
+        "name": "Chen",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Holy Persuasion",
+            "description": "Allows Holy Persuasion to target Ancient Creeps, maximum one per level of Hand of God."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Divine Favor",
+            "description": "Allows Divine Favor to be cast on allies, teleporting them back home after 6 seconds. Cannot target spell immune allies. Cast Range: 500. Cooldown: 35"
+        }
+    },
+    "67": {
+        "name": "Spectre",
+        "scepter_effect": {
+            "type": "ability",
+            "ability_name": "Shadow Step"
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Dispersion",
+            "description": "Can active Dispersion to spawn a Haunt Illusion to attack the most recent hero that damaged Spectre in the last 5s. Illusion lasts 5 seconds. Cooldown: 25"
+        }
+    },
+    "69": {
+        "name": "Doom",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Doom",
+            "description": "Doom applies Break and reduces cooldown to 100."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Infernal Blade",
+            "description": "Infernal Blade stun duration is increased from 0.6 to 1.2 seconds. If the enemy's level is a multiple of 3, or above level 24, they will be stunned for an additional 0.6 seconds and take 150 bonus damage."
+        }
+    },
+    "68": {
+        "name": "Ancient Apparition",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Chilling Touch",
+            "description": "Removes cooldown of Chilling Touch"
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Ice Vortex",
+            "description": "Causes Ice Vortex to deal 40 DPS and reduces attack speed by 20."
+        }
+    },
+    "70": {
+        "name": "Ursa",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Enrage",
+            "description": "Reduces cooldown and allows Ursa to use Enrage while disabled.",
+            "notes": [
+                {
+                    "title": "Cooldown",
+                    "value": "50/40/30 ⇒ 30/24/18"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Fury Swipes",
+            "description": "Every 6th Fury Swipes on a single target causes Ursa to get enraged for 1 seconds."
+        }
+    },
+    "71": {
+        "name": "Spirit Breaker",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Charge of Darkness",
+            "description": "Increases Charge of Darkness movespeed by 175 and reduces cooldown to 7"
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Nether Strike",
+            "description": "Causes Nether Strike to deal 200 damage, and apply a 4-second break. Grants you Spell Immunity for 2 seconds."
+        }
+    },
+    "72": {
+        "name": "Gyrocopter",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Flak Cannon",
+            "description": "Adds a Side Gunner that at random attacks enemy units near Gyrocopter. Prioritizes furthest unit away within its range.",
+            "notes": [
+                {
+                    "title": "Attack Range",
+                    "value": "700"
+                },
+                {
+                    "title": "Attack Interval",
+                    "value": "1.2"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Rocket Barrage",
+            "description": "Rocket Barrage hits an extra target and increases duration by 1 second."
+        }
+    },
+    "73": {
+        "name": "Alchemist",
+        "scepter_effect": {
+            "type": "ability",
+            "ability_name": "Aghanim's Scepter Synth"
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Berserk Potion"
+        }
+    },
+    "74": {
+        "name": "Invoker",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Sun Strike",
+            "description": "Adds one level to the stats provided by Quas, Wex, and Exort on all Invoked spells."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Ice Wall",
+            "description": "Allows Ice Wall to be a Vector Target ability with 1100 cast range. Increases wall length by 320."
+        }
+    },
+    "75": {
+        "name": "Silencer",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Last Word",
+            "description": "Causes Last Word to become a 600 AoE ability."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Glaives of Wisdom",
+            "description": "Causes Glaives to bounce once towards the closest enemy unit, dealing 50% of Silencer's attack damage. Bounce range is 600."
+        }
+    },
+    "76": {
+        "name": "Outworld Destroyer",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Astral Imprisonment",
+            "description": "Grants 2 charges to Astral Imprisonment and increases cast range by 150."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Essence Flux",
+            "description": "Essence Flux becomes 1.5 second channel ability. Swaps Outworld Destroyer's current Life and Mana totals. Only transfers 75% of the respective values. Cooldown: 45"
+        }
+    },
+    "77": {
+        "name": "Lycan",
+        "scepter_effect": {
+            "type": "ability",
+            "ability_name": "Wolf Bite"
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Summon Wolves",
+            "description": "Causes one of the three lanes' creep waves to include a Lycan Wolf icon.png Lane Wolf, which behaves like the lane creeps that cannot be controlled by the player, and move at the same speed as they do. Requires Summon Wolves to be learned to work."
+        }
+    },
+    "78": {
+        "name": "Brewmaster",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Primal Split",
+            "description": "Primal Split has 2 charges and can be canceled at any time. Charge replenish time is equal to the normal cooldown."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Primal Split",
+            "description": "Primal Split now creates a Void brewling. Has Astral Pulse ability, affecting enemies in a 500 AoE. Applies 20%/30%/40% slow and disarm for 2.5 seconds."
+        }
+    },
+    "79": {
+        "name": "Shadow Demon",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Demonic Purge",
+            "description": "Cooldown is removed, replaced with 3 charges that replenish every 60 seconds. Also causes Demonic Purge to break its target's passive abilities while active."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Demonic Purge",
+            "description": "Allows Demonic Purge to be cast on allies, continuously dispelling them and healing for its damage values. Does not slow allies."
+        }
+    },
+    "80": {
+        "name": "Lone Druid",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Summon Spirit Bear",
+            "description": "Allows Spirit Bear to attack at any range from Lone Druid, and to survive if Lone Druid dies."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Savage Roar",
+            "description": "Savage Roar now empowers allies in 700 AoE with +20% Movement Speed and +60 Attack Speed for 5 seconds"
+        }
+    },
+    "81": {
+        "name": "Chaos Knight",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Phantasm",
+            "description": "Creates an illusion of allied heroes. Creates an additional illusion for Chaos Knight as well."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Chaos Bolt",
+            "description": "Chaos Bolt creates a Phantasm illusion attacking the target for the duration of the stun. Increases cast range by 300."
+        }
+    },
+    "82": {
+        "name": "Meepo",
+        "scepter_effect": {
+            "type": "ability",
+            "ability_name": "Dig"
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Ransack",
+            "description": "Ransack now has a 30% chance on hit to apply a Geostrike debuff, slowing enemies by 20% and dealing 20 DPS for 4 seconds. Instances from multiple Meepos stack."
+        }
+    },
+    "83": {
+        "name": "Treant Protector",
+        "scepter_effect": {
+            "type": "ability",
+            "ability_name": "Eyes In The Forest"
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Nature's Guise",
+            "description": "Causes Nature's Guise to root enemies upon attacking. Roots them for 1 second and deals a total of 200 damage. Lasts an extra second when attacking near a tree. Increases movement speed bonus by 15%%."
+        }
+    },
+    "84": {
+        "name": "Ogre Magi",
+        "scepter_effect": {
+            "type": "ability",
+            "ability_name": "Unrefined Fireblast"
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Fire Shield"
+        }
+    },
+    "85": {
+        "name": "Undying",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Decay",
+            "description": "Increases strength steal.",
+            "notes": [
+                {
+                    "title": "Strength Steal",
+                    "value": "4 ⇒ 10"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Decay",
+            "description": "Increases Decay radius by 100 and spawns a zombie around each hero target."
+        }
+    },
+    "86": {
+        "name": "Rubick",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Spell Steal",
+            "description": "Decreases cooldown, increases cast range and upgrades the spell to the Scepter level.",
+            "notes": [
+                {
+                    "title": "Cast Range",
+                    "value": "1000 ⇒ 1400"
+                },
+                {
+                    "title": "Cooldown",
+                    "value": "20/18/16 ⇒ 2"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Telekinesis",
+            "description": "Allows you to target yourself or allies with Telekinesis. Throw range is 60% longer and cooldown is reduced by 30% when targeting allies. Throw delay reduced to 0.5 seconds."
+        }
+    },
+    "87": {
+        "name": "Disruptor",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Static Storm",
+            "description": "Mutes items."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Thunder Strike",
+            "description": "Allows Thunder Strike to be cast on allies, follows the ally and deals damage around them. Each strike gives a short 1 second buff that provides +50% Movement Speed and +75 Attack Speed. Increases radius by 260 when used on allies."
+        }
+    },
+    "88": {
+        "name": "Nyx Assassin",
+        "scepter_effect": {
+            "type": "ability",
+            "ability_name": "Burrow"
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Vendetta",
+            "description": "Causes Nyx's Vendetta attack to reduce enemy magic resistance by 20% for 4 seconds. Also increases Vendetta movement speed by 25%, unlocking max speed."
+        }
+    },
+    "89": {
+        "name": "Naga Siren",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Ensnare",
+            "description": "Allows Ensnare to target Spell Immune or sleeping units. Reduces the Ensnare cooldown by 5 seconds and increases cast range by 400"
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Rip Tide",
+            "description": "Adds active to Rip Tide, releasing stronger Rip Tide that slows enemies by 40% for 4 seconds. Applies around each illusion, but can be only hit by one instance. Increases the base armor reduction by 2."
+        }
+    },
+    "90": {
+        "name": "Keeper of the Light",
+        "scepter_effect": {
+            "type": "ability",
+            "ability_name": "Will-O-Wisp"
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Illuminate",
+            "description": "Causes Illuminate to heal for 40% of its damage during daytime."
+        }
+    },
+    "91": {
+        "name": "Io",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Spirits",
+            "description": "Spirits now passively spawn around you constantly every second. Max of 5."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Tether",
+            "description": "Ending Tether stuns enemies touching it for 1.75 seconds and deals 150 damage. Increases movement speed bonus by 10%."
+        }
+    },
+    "92": {
+        "name": "Visage",
+        "scepter_effect": {
+            "type": "ability",
+            "ability_name": "Silent as the Grave"
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Gravekeeper's Cloak",
+            "description": "Grants Visage the ability to cast Stone Form. Restores up to 25% of your health. Cooldown: 60. Manacost: 200."
+        }
+    },
+    "93": {
+        "name": "Slark",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Pounce",
+            "description": "Provides 2 charges and increases pounce range to 1400."
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Fish Bait"
+        }
+    },
+    "94": {
+        "name": "Medusa",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Mystic Snake",
+            "description": "Causes Mystic Snake to turn enemies hit into stone. Stone duration increases with each bounce of the Mystic Snake."
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Cold Blooded"
+        }
+    },
+    "95": {
+        "name": "Troll Warlord",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Whirling Axes",
+            "description": "Reduces  Whirling Axes cooldown from 9 to 4 and mana cost by 50%. Causes  Whirling Axes (Ranged) to apply a basic dispel on hit enemies, and  Whirling Axes (Melee) to apply a basic dispel on self upon cast."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Battle Trance",
+            "description": "Casting Battle Trance now gives Troll Warlord a global aura that gives allied heroes (including himself) +60 Attack Speed."
+        }
+    },
+    "96": {
+        "name": "Centaur Warrunner",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Stampede",
+            "description": "Heroes affected by Stampede take 40% reduced damage, and are able to run through obstructions, including trees and up cliffs."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Double Edge",
+            "description": "Causes Double Edge to increase Centaur's strength by 15% per hero hit for 12 seconds. Duration refreshes per stack. Max 5 stacks. Slows enemies by 15% for 2 seconds."
+        }
+    },
+    "97": {
+        "name": "Magnus",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Shockwave",
+            "description": "Causes  Shockwave to release 3 waves, one going centered and the other 2 at 30° angles towards the left and right. After reaching max distance, the shockwaves return, dealing 75% damage and pulling enemies towards the returning point."
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Horn Toss"
+        }
+    },
+    "98": {
+        "name": "Timbersaw",
+        "scepter_effect": {
+            "type": "ability",
+            "ability_name": "Second Chakram"
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Flamethrower"
+        }
+    },
+    "99": {
+        "name": "Bristleback",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Viscous Nasal Goo",
+            "description": "Viscous Nasal Goo becomes a no target area of effect ability, applying to all enemies within range. Increases stack limit to 8.",
+            "notes": [
+                {
+                    "title": "Radius",
+                    "value": "825"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Hairball"
+        }
+    },
+    "100": {
+        "name": "Tusk",
+        "scepter_effect": {
+            "type": "ability",
+            "ability_name": "Walrus Kick"
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Frozen Sigil"
+        }
+    },
+    "101": {
+        "name": "Skywrath Mage",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Arcane Bolt",
+            "description": "When Skywrath Mage casts a spell, a different random target within 700 range willl be hit with the same ability. Heroes will take priority."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Ancient Seal",
+            "description": "Ancient Seal debuff now causes other debuffs applied to last 50% longer. Grants vision over the target."
+        }
+    },
+    "102": {
+        "name": "Abaddon",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Borrowed Time",
+            "description": "Increases duration. While Borrowed Time is active, anytime an ally takes more than 525 damage while within 1600 range of Abaddon, an individual Mist Coil will automatically fire towards that ally.",
+            "notes": [
+                {
+                    "title": "Radius",
+                    "value": "1600"
+                },
+                {
+                    "title": "Duration",
+                    "value": "4/5/6 ⇒ 5/6/7"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Curse of Avernus",
+            "description": "Causes Mist Coil and Aphotic Shield to apply a Curse of Avernus stack on enemies. Increases base slow by 10%."
+        }
+    },
+    "103": {
+        "name": "Elder Titan",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Astral Spirit",
+            "description": "Causes you to become Spell Immune for 2 seconds per affected enemy hero when the spirit returns to you."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Echo Stomp",
+            "description": "Allows you switch Echo Stomp to autocast. When cast while on autocast, Elder Titan will take place of the Astral Spirit as it completes its stomp."
+        }
+    },
+    "104": {
+        "name": "Legion Commander",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Duel",
+            "description": "Increases Duel duration, makes Legion Commander Spell Immune in Duel, and makes Legion Commander and her opponent only take damage from each other.",
+            "notes": [
+                {
+                    "title": "Duration",
+                    "value": "4/4.75/5.5 ⇒ 6/7/8"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Duel",
+            "description": "While Dueling, immediately and every 2 seconds, an Overwhelming Odds is cast centered on a random enemy unit within 900 radius. Does not center on the same target twice. Prioritizes heroes."
+        }
+    },
+    "106": {
+        "name": "Ember Spirit",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Fire Remnant",
+            "description": "Increases cast range, initial remnant speed, and maximum charges.",
+            "notes": [
+                {
+                    "title": "Cast Range",
+                    "value": "1500 ⇒ 4500"
+                },
+                {
+                    "title": "Remnant Travel Speed",
+                    "value": "250% ⇒ 500%"
+                },
+                {
+                    "title": "Number of Charges",
+                    "value": "3 ⇒ 5"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Fire Remnant",
+            "description": "Fire Remnants deal 45 damage per second in a 600 AoE around them. If Ember Spirit dies or kills an enemy hero within 400 range, a Fire Remnant appears nearby."
+        }
+    },
+    "107": {
+        "name": "Earth Spirit",
+        "scepter_effect": {
+            "type": "ability",
+            "ability_name": "Enchant Remnant"
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Stone Remnant",
+            "description": "Causes Stone Remnant to provide 400 ground vision. Increases charge count by 4."
+        }
+    },
+    "108": {
+        "name": "Underlord",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Dark Rift",
+            "description": "Reduces Dark Rift teleport delay by 1, and cooldown by 50, and allows it to be cast on allied heroes."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Firestorm",
+            "description": "Firestorm can be self-targeted. When used that way, the Firestorm follows Underlord around. Also causes Firestorm to heal him for 15% of the damage values. Reduced cast point by half."
+        }
+    },
+    "109": {
+        "name": "Terrorblade",
+        "scepter_effect": {
+            "type": "ability",
+            "ability_name": "Terror Wave"
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Demon Zeal"
+        }
+    },
+    "110": {
+        "name": "Phoenix",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Supernova",
+            "description": "Increases number of attacks to destroy Supernova and allows Phoenix to cast Supernova on an allied hero, bringing both into the sun to be reborn together.",
+            "notes": [
+                {
+                    "title": "Cast Range",
+                    "value": "500"
+                },
+                {
+                    "title": "Hero Attacks to Destroy",
+                    "value": "5/8/11 ⇒ 7/10/13"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Fire Spirits",
+            "description": "Causes Fire Spirits to become a passive charge-based ability. Has a 7 second replenish time."
+        }
+    },
+    "105": {
+        "name": "Techies",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Minefield Sign",
+            "description": "Allows Minefield Sign to hide any Proximity Mines, Stasis Traps, and Remote Mines in an 125 radius area around the sign from True Sight. Increases cast range by 300."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Blast Off!",
+            "description": "Increases Blast Off! cast range by 600, and applies a 1.5 second stun to enemies in 200 AoE"
+        }
+    },
+    "111": {
+        "name": "Oracle",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Fate's Edict",
+            "description": "Causes  Fate's Edict to no longer grant 100% magic resistance to enemy targets and to no longer disarm allied targets."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "False Promise",
+            "description": "Causes False Promise to have a 0.3-second fade delay invisibility."
+        }
+    },
+    "112": {
+        "name": "Winter Wyvern",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Arctic Burn",
+            "description": "Causes Arctic Burn to be a toggle ability, draining 20 mana every second when active. Removes limit on number of attacks per target. Increases Winter Wyvern's movement speed."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Cold Embrace",
+            "description": "When Cold Embrace ends, a Splinter Blast goes off that location, hitting enemies within range."
+        }
+    },
+    "113": {
+        "name": "Arc Warden",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Spark Wraith",
+            "description": "Causes  Spark Wraith to spawn a new wraith after impacting the enemy, which has an activation delay of 3 seconds. Spark Wraiths created this way cannot spawn further wraiths."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Magnetic Field",
+            "description": "Magnetic Field now pushes enemies out of the area at cast time, and provides allies in it with +20% Magic Resistance."
+        }
+    },
+    "114": {
+        "name": "Monkey King",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Wukong's Command",
+            "description": "Spawns a monkey soldier near you at regular intervals. Soldiers do not spawn while invisible or on trees. Soldiers only attack buildings when Monkey King himself is nearby.",
+            "notes": [
+                {
+                    "title": "Passive Soldier Interval",
+                    "value": "3.5"
+                },
+                {
+                    "title": "Passive Soldier Duration",
+                    "value": "12"
+                }
+            ]
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Tree Dance",
+            "description": "Reduces cooldown to 0.4 and cast point to 0.1."
+        }
+    },
+    "119": {
+        "name": "Dark Willow",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Shadow Realm",
+            "description": "Attacking no longer takes you out of Shadow Realm. Each attack still has bonus damage based on the duration of the buff."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Cursed Crown",
+            "description": "Cursed Crown creates four brambles around the target after the counter ends. Triggers even upon dispel. Reduces cooldown by 3 seconds."
+        }
+    },
+    "120": {
+        "name": "Pangolier",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Shield Crash",
+            "description": "Causes Shield Crash to cast a 2-attack Swashbuckle in every 90 degrees around your hero."
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Roll Up"
+        }
+    },
+    "121": {
+        "name": "Grimstroke",
+        "scepter_effect": {
+            "type": "ability",
+            "ability_name": "Dark Portrait"
+        },
+        "shard_effect": {
+            "type": "ability",
+            "ability_name": "Ink Over"
+        }
+    },
+    "123": {
+        "name": "Hoodwink",
+        "scepter_effect": {
+            "type": "",
+            "ability_name": "",
+            "description": ""
+        },
+        "shard_effect": {
+            "type": "",
+            "ability_name": "",
+            "description": ""
+        }
+    },
+    "126": {
+        "name": "Void Spirit",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Resonant Pulse",
+            "description": "Causes Resonant Pulse to silence for 2 seconds and gain two charges."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Dissimilate",
+            "description": "Adds a partial outer ring to Dissimilate. Increases damage by 125."
+        }
+    },
+    "128": {
+        "name": "Snapfire",
+        "scepter_effect": {
+            "type": "ability",
+            "ability_name": "Gobble Up"
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Scatterblast",
+            "description": "Causes Scatterblast to knock units back in the point blank range for 250 units, dealing 125 extra damage and stunning for 1.5 seconds."
+        }
+    },
+    "129": {
+        "name": "Mars",
+        "scepter_effect": {
+            "type": "upgrade",
+            "ability_name": "Bulwark",
+            "description": "Causes  Bulwark to spawn 5 invulnerable soldiers in an arc 200 range in front of Mars that move along with him, and attack enemies in 1 second intervals within 150 in front of them, dealing Mars's attack damage +75, applying on-hit effects, and slowing enemy movement speed by 20% for 1 second. Each soldier may attack only one enemy at a time."
+        },
+        "shard_effect": {
+            "type": "upgrade",
+            "ability_name": "Spear of Mars",
+            "description": "Spear of Mars impales up to two units and leaves a fire trail behind for 10 seconds. Deals 35 damage per second and slows by 20%. Debuff lingers for 2 seconds."
+        }
+    },
+    "X": {
+        "name": "",
+        "scepter_effect": {
+            "type": "",
+            "ability_name": "",
+            "description": ""
+        },
+        "shard_effect": {
+            "type": "",
+            "ability_name": "",
+            "description": ""
+        }
+    }
+}

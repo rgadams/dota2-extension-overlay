@@ -1,0 +1,119 @@
+.item {
+    background-color: var(--dark-grey);
+    background: linear-gradient(0deg, var(--dark-grey) 65%, rgba(28,39,48,1) 87%);
+    border: black solid 2px;
+    color: var(--text-grey);
+    line-height: 120%;
+}
+
+.item-top-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(31, 38, 43);
+    color: var(--text-white);
+    padding: 0.5em;
+    border-bottom: var(--dark-grey) 1px solid;
+}
+
+.item-identifiers {
+    display: flex;
+    flex-direction: row;
+}
+
+.item-name {
+    text-transform: uppercase;
+    align-self: center;
+}
+
+.item-image {
+    width: 2.5em;
+    height: 2em;
+    margin-right: 1em;
+    border: var(--dark-grey) solid 2px;
+}
+
+.item-cost {
+    color: var(--gold-yellow);
+    align-self: center;
+}
+
+.gold-icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+}
+
+.cooldown-icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: top;
+    margin-top: 0.05em;
+}
+
+.item-bonuses {
+    padding: 0.5em;
+    margin-top: 0.2em;
+}
+
+.strength-bonus {
+    color: var(--strength-red);
+}
+
+.agility-bonus {
+    color: var(--agility-green);
+}
+
+.intelligence-bonus {
+    color: var(--intelligence-blue);
+}
+
+.item-ability-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.3em 0.5em 0.2em 0.5em;
+}
+
+.active-ability {
+    margin: 0.5em;
+    background-color: rgb(27, 36, 54);
+    color: var(--text-light);
+}
+
+.active-ability-header {
+    background: rgb(54,59,128);
+    background: linear-gradient(90deg, rgba(54,59,128,1) 0%, rgba(27,36,54,1) 82%);
+}
+
+.active-ability-effect {
+    padding: 0.5em;
+}
+
+.passive-ability {
+    margin: 0.5em;
+    background-color: rgb(28, 39, 48);
+    color: var(--text-light);
+}
+
+.passive-ability-header {
+    background: rgb(38,53,63);
+    background: linear-gradient(90deg, rgba(38,53,63,1) 0%, rgba(28,39,48,1) 82%);
+}
+
+.passive-ability-effect {
+    padding: 0.5em;
+}
+
+.item-ability-note {
+    padding-left: 0.5em;
+    color: var(--text-grey)
+}
+
+.item-ability-note:last-child {
+    padding-bottom: 0.5em;
+}
+
+.item-ability-note b {
+    color: var(--text-white);
+}

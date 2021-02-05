@@ -1,0 +1,8 @@
+{
+	"HeroId": 46,
+	"Abilities": ["templar_assassin_refraction", "templar_assassin_meld", "templar_assassin_psi_blades", "templar_assassin_trap", "templar_assassin_psionic_trap"],
+	"ActiveItems": ["item_magic_wand", "item_clarity", "item_tango", "item_flask", "item_tome_of_knowledge", "item_enchanted_mango"],
+	"BackpackItems": ["item_smoke_of_deceit", "item_faerie_fire", "item_dust"],
+	"NeutralItem": "",
+	"TpSlot": ""
+}

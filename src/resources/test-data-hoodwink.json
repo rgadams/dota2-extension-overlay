@@ -1,0 +1,8 @@
+{
+	"HeroId": 123,
+	"Abilities": ["hoodwink_acorn_shot", "hoodwink_bushwhack", "hoodwink_scurry", "hoodwink_sharpshooter"],
+	"ActiveItems": ["item_falcon_blade", "item_wraith_band", "item_boots", "item_mage_slayer", "item_dragon_lance", "item_mjollnir"],
+	"BackpackItems": ["item_relic", "item_reaver", "item_mystic_staff"],
+	"NeutralItem": "",
+	"TpSlot": ""
+}

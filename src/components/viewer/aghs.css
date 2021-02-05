@@ -1,0 +1,45 @@
+.aghanims-upgrades {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.aghanims-upgrades > * {
+    padding: 0 0.5em 0.5em 0.5em;
+    background-color:rgb(20, 26, 31);
+    border: 2px solid black;
+}
+
+.scepter-upgrade {
+    flex: 1 1 0px;
+    margin-right: 1em;
+}
+
+.shard-upgrade {
+    flex: 1 1 0px;
+}
+
+.upgrade-header {
+    display: flex;
+    flex-direction: row;
+    color: var(--text-white);
+}
+
+.aghs-icon {
+    width: 2.5em;
+    height: 2em;
+    margin-right: 0.5em;
+    align-self: center;
+    border: 1px solid var(--aghs-blue);
+}
+
+.upgrade-header b {
+    text-transform: uppercase;
+}
+
+.ability-upgrade {
+    border-top: solid 1px var(--medium-grey);
+    padding: 0.5em;
+    color: var(--text-light);
+    line-height: 120%;
+}

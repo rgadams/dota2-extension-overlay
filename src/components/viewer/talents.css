@@ -1,0 +1,51 @@
+.talents-title {
+    color: var(--light-grey);
+    text-align: center;
+    background-color: var(--dark-grey);
+    margin: 0 1em;
+    padding: 0.25em 0;
+}
+
+table {
+    background-color: var(--dark-grey);
+}
+
+.talent-tree-row {
+    display: flex;
+    flex-direction: row;
+    margin: 0.25em -0.25em;
+    line-height: 100%;
+    height: 3em;
+}
+
+.talent-tree-row > td:not(.talent-level){
+    flex: 1 1 0px;
+    font-size: calc(5px + 0.5vw);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--light-grey);
+    background: rgb(68,64,79);
+    background: radial-gradient(circle, rgba(68,64,79,1) 25%, rgba(50,55,66,1) 75%);
+}
+
+.talent-level {
+    z-index: 1;
+    width: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: var(--dark-grey);
+    color:rgb(255,173,125);
+    text-shadow:  0 0 7px orange;
+    margin: 0 -0.5em;
+    padding: 0 0.4em;
+    background-color: var(--dark-grey);
+    border: 1px solid var(--dark-grey);
+    box-shadow: inset 0 0 0 3px var(--medium-grey);
+    border-radius: 100%;
+}
