@@ -1,29 +1,34 @@
 import React, { Component } from "react";
 import "./viewer.css";
 import { Dota2GameData } from "types/dota2-game-data";
-import { AbilitiesComponent } from "./abilities";
-import { ItemComponent } from "./item";
-import { TalentsComponent } from "./talents";
-import { HeroComponent } from "./hero";
-import { AghsComponent } from "./aghs";
+import { AbilitiesComponent } from "./abilities/abilities";
+import { ItemsComponent } from "./items/items";
+import { TalentsComponent } from "./talents/talents";
+import { HeroComponent } from "./hero/hero";
+import { AghsComponent } from "./aghs/aghs";
 import { NameTranslator } from "./name-translator";
 
 declare const window: any;
 
 export class ViewerComponent extends Component {
-    // gameData: Dota2GameData = require('resources/test-data-ta-aghs.json');
     heroes: any = require('resources/heroes_data.json');
-    items: any = require('resources/items_data.json');
     nameTranslator: NameTranslator = new NameTranslator();
-    state: { gameData: Dota2GameData, numberOfAbilities: number, hero: any }
+    state: { gameData: Dota2GameData, numberOfAbilities: number, hero: any, showItemsPopup: boolean }
 
     constructor(props: any) {
         super(props);
         this.state = {
             gameData: { HeroId: -1, Abilities: [], ActiveItems: [], BackpackItems: [], NeutralItem: "", TpSlot: ""},
             numberOfAbilities: 0,
-            hero: null
+            hero: null,
+            showItemsPopup: false
         }
+        // this.state = {
+        //     gameData: require('resources/test-data-ta-aghs.json'),
+        //     numberOfAbilities: 6,
+        //     hero: this.heroes["46"],
+        //     showItemsPopup: false
+        // }
     }
 
     componentDidMount() {
@@ -33,7 +38,8 @@ export class ViewerComponent extends Component {
             this.setState({
                 gameData: gameData,
                 numberOfAbilities: gameData.Abilities.length,
-                hero: this.heroes[gameData.HeroId]
+                hero: this.heroes[gameData.HeroId],
+                showItemsPopup: this.state.showItemsPopup
             });
         });
     }
@@ -42,8 +48,6 @@ export class ViewerComponent extends Component {
         if (this.state.gameData.HeroId === -1) {
             return null;
         }
-        console.log("Hero Data: ", this.state.hero.data);
-        console.log("Game Data: ", this.state.gameData);
         return (
             <div className="viewerComponent">
                 <div className={ this.getUISizeClass() + " dota2-grid" }>
@@ -83,71 +87,29 @@ export class ViewerComponent extends Component {
                             <AghsComponent heroId={this.state.gameData.HeroId} heroData={this.state.hero.data}></AghsComponent>
                         </div>
                     </div>
-                    <div className="items">
-                        { 
-                            this.state.gameData.ActiveItems.map((item, index) => {
-                                const itemName = this.getItemName(item)
-                                const itemData = this.items[itemName]
-                                if (itemData) {
-                                    return (
-                                        <div className="popup-parent">
-                                            <div className="popup item-popup">
-                                                <ItemComponent itemData={itemData}></ItemComponent>
-                                            </div>
-                                        </div>
-                                    )
-                                } else {
-                                    return <div/>;
-                                }
-                            })
-                        }
-                        {
-                            this.state.gameData.BackpackItems.map((item, index) => {
-                                const itemName = this.getItemName(item)
-                                const itemData = this.items[itemName]
-                                if (itemData) {
-                                    return (
-                                        <div className="popup-parent">
-                                            <div className="popup item-popup">
-                                                <ItemComponent itemData={itemData}></ItemComponent>
-                                            </div>
-                                        </div>
-                                    )
-                                } else {
-                                    return <div/>;
-                                }
-                            })
-                        }
+                    <div className="items" onClick={this.toggleItemsPopup.bind(this)}>
+                        <div className="items-hover-text">
+                            Click For Item Information
+                        </div>
+                    </div>
+                    <div hidden={!this.state.showItemsPopup} className="items-popup">
+                        <ItemsComponent activeItems={this.state.gameData.ActiveItems} 
+                                        backpackItems={this.state.gameData.BackpackItems}>
+                        </ItemsComponent>
                     </div>
                     <div className="neutrals popup-parent">
-                        Neutrals
-                        <div className="neutral-popup popup">
+                        {/* <div className="neutral-popup popup">
                             Neutral Item Popup
-                        </div>
+                        </div> */}
                     </div>
                     <div className="tp-scroll popup-parent">
-                        TP
-                        <div className="tp-popup popup">
+                        {/* <div className="tp-popup popup">
                             TP Popup
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
         )
-    }
-
-    /**
-     * Translates the name of the item returned with the Game State to a name recognizable by the scraped item data
-     * @param item The name of the item to get
-     */
-    getItemName(item: any) {
-        let itemName = item.replace(/.*?_/, '')
-            .split("_")
-            .map((str: any) => str.charAt(0).toUpperCase() + str.substring(1))
-            .join(" ")
-            .trim()
-            .replace(" Of ", " of ");
-        return this.nameTranslator.translateItemName(itemName);
     }
 
     /**
@@ -165,5 +127,11 @@ export class ViewerComponent extends Component {
             default:
                 return "";
         }
+    }
+
+    toggleItemsPopup() {
+        this.setState((state: any) => ({
+            showItemsPopup: !state.showItemsPopup
+        }));
     }
 }

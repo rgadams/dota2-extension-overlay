@@ -3,9 +3,6 @@ html, body, #root, #root>div {
 }
 
 .viewerComponent {
-    /* background-image: url('resources/Dota2HUD.png'); */
-    /* background-size: contain; */
-    /* background-repeat: no-repeat; */
     width: 100%;
     height: 100%;
 }
@@ -76,8 +73,30 @@ html, body, #root, #root>div {
     grid-template-columns: auto auto auto;
 }
 
-.item-popup {
-    max-width: 25%;
+.items-hover-text {
+    display: none;
+    text-align: center;
+    align-self: center;
+    color: var(--text-white);
+    padding: 0 0.5em;
+}
+
+.items:hover {
+    background: rgb(45,45,45);
+    background: radial-gradient(circle, rgba(45,45,45,0.65) 42%, rgba(83,87,91,0.35) 75%);
+    cursor: pointer;
+}
+
+.items:hover > .items-hover-text {
+    display: block;
+}
+
+.items-popup {
+    max-width: 40%;
+    min-width: 15em;
+    position: absolute;
+    left: 1%;
+    top: 10%;
 }
 
 .neutrals {
@@ -96,17 +115,17 @@ html, body, #root, #root>div {
 }
 
 .grid-four-abilities {
-    grid-template-rows: 87.5% 6.25% 6.25%;
+    grid-template-rows: 86.5% 7.25% 6.25%;
     grid-template-columns: 29.5% 8.3% 3.9% 13.2% 3.1% 10.5% 2.5%;
 }
 
 .grid-five-abilities {
-    grid-template-rows: 87.5% 6.25% 6.25%;
+    grid-template-rows: 86.5% 7.25% 6.25%;
     grid-template-columns: 28.5% 8.3% 3.9% 15.2% 3.1% 10.5% 2.5%;
 }
 
 .grid-six-abilities {
-    grid-template-rows: 87.5% 6.25% 6.25%;
+    grid-template-rows: 86.5% 7.25% 6.25%;
     grid-template-columns: 27% 8.3% 3.9% 17.8% 3.1% 10.5% 2.5%;
 }
 

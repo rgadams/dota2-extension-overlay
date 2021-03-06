@@ -3,36 +3,22 @@ import "./item.css"
 
 interface ItemProps {
     itemData: any
+    deselectItem: any
 }
 
 export class ItemComponent extends Component<ItemProps, {}> {
-    state: any;
-
-    constructor(props: any) {
-        super(props)
-        this.state = {
-            itemData: props.itemData
-        }
-    }
-
-    componentWillReceiveProps(nextProps: any) {
-        if (this.props.itemData !== nextProps.itemData) {
-            this.setState({
-                itemData: nextProps.itemData
-            });
-        }
-    }
 
     render() {
         return (
             <div className="item">
+                <button className="deselect-button" onClick={this.props.deselectItem}>Close</button>
                 <div className="item-top-row">
                     <div className="item-identifiers"> 
-                        <img className="item-image" src={ this.state.itemData.image_src } alt={ this.state.itemData.item_name }/>
-                        <div className="item-name">{ this.state.itemData.item_name }</div>
+                        <img className="item-image" src={ this.props.itemData.image_src } alt={ this.props.itemData.item_name }/>
+                        <div className="item-name">{ this.props.itemData.item_name }</div>
                     </div>
                     <div className="item-cost">
-                        <img className="gold-icon" alt="gold" src="https://static.wikia.nocookie.net/dota2_gamepedia/images/c/cd/Gold_symbol.png"/> { this.state.itemData.item_cost }
+                        <img className="gold-icon" alt="gold" src="https://static.wikia.nocookie.net/dota2_gamepedia/images/c/cd/Gold_symbol.png"/> { this.props.itemData.item_cost }
                     </div>
                 </div>
                 {this.renderItemBonuses()}
@@ -43,12 +29,11 @@ export class ItemComponent extends Component<ItemProps, {}> {
     }
 
     renderItemBonuses() {
-        if (this.state.itemData.bonuses) {
+        if (this.props.itemData.bonuses) {
             return(
                 <div className="item-bonuses">
                 {
-                    this.state.itemData.bonuses.map((bonus: any, index: any) => {
-                        console.log(bonus);
+                    this.props.itemData.bonuses.map((bonus: any, index: any) => {
                         return (
                             <div key={index} className={this.getClassForBonus(bonus) + " bonus"}>{ bonus }</div>
                         )
@@ -60,16 +45,16 @@ export class ItemComponent extends Component<ItemProps, {}> {
     }
 
     renderActiveAbility() {
-        if (this.state.itemData.active) {
+        if (this.props.itemData.active) {
             return (
                 <div className="active-ability">
                     <div className="item-ability-header active-ability-header">
-                        <div>Active: {this.state.itemData.active.name}</div>{ this.displayCooldown(this.state.itemData.active) }
+                        <div>Active: {this.props.itemData.active.name}</div>{ this.displayCooldown(this.props.itemData.active) }
                     </div>
                     <div className="active-ability-effect">
-                        {this.state.itemData.active.effect}
+                        {this.props.itemData.active.effect}
                     </div>
-                    { this.displayItemAbilityNotes(this.state.itemData.active) }
+                    { this.displayItemAbilityNotes(this.props.itemData.active) }
                 </div>
             )
         }
@@ -77,16 +62,16 @@ export class ItemComponent extends Component<ItemProps, {}> {
 
 
     renderPassiveAbility() {
-        if (this.state.itemData.passive) {
+        if (this.props.itemData.passive) {
             return (
                 <div className="passive-ability">
                     <div className="item-ability-header passive-ability-header">
-                        <div>Passive: {this.state.itemData.passive.name}</div>{ this.displayCooldown(this.state.itemData.passive) }
+                        <div>Passive: {this.props.itemData.passive.name}</div>{ this.displayCooldown(this.props.itemData.passive) }
                     </div>
                     <div className="passive-ability-effect">
-                        {this.state.itemData.passive.effect}
+                        {this.props.itemData.passive.effect}
                     </div>
-                    { this.displayItemAbilityNotes(this.state.itemData.passive) }
+                    { this.displayItemAbilityNotes(this.props.itemData.passive) }
                 </div>
             )
         }

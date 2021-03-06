@@ -95,7 +95,6 @@ export class NameTranslator {
     }
 
     translateItemName(itemName: string) {
-        console.log(itemName);
         return this.correctedItemNames.get(itemName) || itemName;
     }
 }

@@ -4,6 +4,23 @@
     border: black solid 2px;
     color: var(--text-grey);
     line-height: 120%;
+    display: flex;
+    flex-direction: column;
+}
+
+.deselect-button {
+    position: fixed;
+    margin-top: -1em;
+    margin-right: -1em;
+    align-self: flex-end;
+    background-color: var(--medium-grey);
+    border-radius: 15px;
+    color: var(--text-white);
+    font-family: 'Mukta';
+}
+
+.deselect-button:hover {
+    cursor: pointer;
 }
 
 .item-top-row {
@@ -24,10 +41,11 @@
 .item-name {
     text-transform: uppercase;
     align-self: center;
+    padding-right: 1em;
 }
 
 .item-image {
-    width: 2.5em;
+    width: 3em;
     height: 2em;
     margin-right: 1em;
     border: var(--dark-grey) solid 2px;

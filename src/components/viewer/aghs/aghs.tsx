@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { AbilitiesComponent } from "./abilities";
+import { AbilitiesComponent } from "../abilities/abilities";
 import "./aghs.css"
 
 interface AghsProps {
