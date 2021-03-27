@@ -1,34 +1,29 @@
 import React, { Component } from "react";
+import "../../index.css";
 import "./viewer.css";
-import { Dota2GameData } from "types/dota2-game-data";
-import { AbilitiesComponent } from "./abilities/abilities";
-import { ItemsComponent } from "./items/items";
-import { TalentsComponent } from "./talents/talents";
-import { HeroComponent } from "./hero/hero";
-import { AghsComponent } from "./aghs/aghs";
-import { NameTranslator } from "./name-translator";
+import { Dota2GameData } from "../../types/dota2-game-data";
+import { AbilitiesComponent } from "../abilities/abilities";
+import { ItemsComponent } from "../items/items";
+import { TalentsComponent } from "../talents/talents";
+import { HeroComponent } from "../hero/hero";
+import { AghsComponent } from "../aghs/aghs";
+import { NameTranslator } from "../../name-translator";
 
 declare const window: any;
 
 export class ViewerComponent extends Component {
-    heroes: any = require('resources/heroes_data.json');
+    heroes: any = require('../../resources/heroes_data.json');
     nameTranslator: NameTranslator = new NameTranslator();
     state: { gameData: Dota2GameData, numberOfAbilities: number, hero: any, showItemsPopup: boolean }
 
     constructor(props: any) {
         super(props);
         this.state = {
-            gameData: { HeroId: -1, Abilities: [], ActiveItems: [], BackpackItems: [], NeutralItem: "", TpSlot: ""},
+            gameData: { heroId: -1, abilities: [], activeItems: [], backpackItems: [], neutralItem: ""},
             numberOfAbilities: 0,
             hero: null,
             showItemsPopup: false
         }
-        // this.state = {
-        //     gameData: require('resources/test-data-ta-aghs.json'),
-        //     numberOfAbilities: 6,
-        //     hero: this.heroes["46"],
-        //     showItemsPopup: false
-        // }
     }
 
     componentDidMount() {
@@ -37,25 +32,25 @@ export class ViewerComponent extends Component {
             const gameData: Dota2GameData = JSON.parse(msg)
             this.setState({
                 gameData: gameData,
-                numberOfAbilities: gameData.Abilities.length,
-                hero: this.heroes[gameData.HeroId],
+                numberOfAbilities: gameData.abilities.length,
+                hero: this.heroes[gameData.heroId],
                 showItemsPopup: this.state.showItemsPopup
             });
         });
     }
 
     render() {
-        if (this.state.gameData.HeroId === -1) {
-            return null;
+        if (this.state.gameData.heroId === -1) {
+            return <div>No data received!</div>;
         }
         return (
             <div className="viewerComponent">
                 <div className={ this.getUISizeClass() + " dota2-grid" }>
-                    <div className="hero popup-parent">
+                    {/* <div className="hero popup-parent">
                         <div className="popup hero-popup">
                             <HeroComponent baseStats={this.state.hero.data.base_stats}></HeroComponent>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="talent-tree popup-parent">
                         <div className="popup talents-popup">
                             <TalentsComponent talentData={this.state.hero.data.talents}></TalentsComponent>
@@ -63,17 +58,20 @@ export class ViewerComponent extends Component {
                     </div>
                     <div className="abilities">
                         {
-                            this.state.gameData.Abilities.map((ability, index) => {
+                            this.state.gameData.abilities.map((ability, index) => {
                                 const abilityData = this.state.hero.data.abilities.find((a: any) => {
-                                    let abilityName = ability.split("_")
+                                    let abilityName = ability
+                                        .replace(this.state.hero.name, '')
+                                        .split("_")
                                         .map((str) => str.charAt(0).toUpperCase() + str.substring(1))
                                         .join(" ")
-                                        .replace(this.state.hero.name, '')
+                                        .replace('Of', 'of')
+                                        .replace('The', 'the')
                                         .trim();
                                     return a.ability_name === this.nameTranslator.translateAbilityName(abilityName);
                                 })
                                 return (
-                                    <div className="popup-parent">&nbsp;
+                                    <div key={index} className="popup-parent">&nbsp;
                                         <div className="popup ability-popup">
                                             <AbilitiesComponent ability={abilityData}></AbilitiesComponent>
                                         </div>
@@ -84,17 +82,17 @@ export class ViewerComponent extends Component {
                     </div>
                     <div className="aghanims popup-parent">
                         <div className="aghanims-popup popup">
-                            <AghsComponent heroId={this.state.gameData.HeroId} heroData={this.state.hero.data}></AghsComponent>
+                            <AghsComponent heroId={this.state.gameData.heroId} heroData={this.state.hero.data}></AghsComponent>
                         </div>
                     </div>
                     <div className="items" onClick={this.toggleItemsPopup.bind(this)}>
                         <div className="items-hover-text">
-                            Click For Item Information
+                            Click To Show/Hide Item Information
                         </div>
                     </div>
                     <div hidden={!this.state.showItemsPopup} className="items-popup">
-                        <ItemsComponent activeItems={this.state.gameData.ActiveItems} 
-                                        backpackItems={this.state.gameData.BackpackItems}>
+                        <ItemsComponent activeItems={this.state.gameData.activeItems} 
+                                        backpackItems={this.state.gameData.backpackItems}>
                         </ItemsComponent>
                     </div>
                     <div className="neutrals popup-parent">

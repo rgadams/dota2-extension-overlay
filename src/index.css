@@ -29,15 +29,3 @@ body {
 
   font-size: calc(8px + 0.5vw);
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-@font-face {
-  font-family: 'HypatiaSans';
-  src: local('HypatiaSans'), url(./fonts/HypatiaSansPro-Bold.otf) format('otf');
-  font-style: normal;
-  font-weight: 400;
-}

@@ -28,7 +28,10 @@ html, body, #root, #root>div {
 
 .popup-parent {
     width: 100%;
-    border: red solid 1px;
+}
+
+.popup-parent:hover {
+    cursor: cell;
 }
 
 .popup-parent:hover > div {
@@ -116,17 +119,17 @@ html, body, #root, #root>div {
 
 .grid-four-abilities {
     grid-template-rows: 86.5% 7.25% 6.25%;
-    grid-template-columns: 29.5% 8.3% 3.9% 13.2% 3.1% 10.5% 2.5%;
+    grid-template-columns: 29.5% 8.2% 3.9% 13.2% 3.2% 10.5% 2.5%;
 }
 
 .grid-five-abilities {
     grid-template-rows: 86.5% 7.25% 6.25%;
-    grid-template-columns: 28.5% 8.3% 3.9% 15.2% 3.1% 10.5% 2.5%;
+    grid-template-columns: 28.5% 8.3% 4% 15% 3% 10.5% 2.5%;
 }
 
 .grid-six-abilities {
     grid-template-rows: 86.5% 7.25% 6.25%;
-    grid-template-columns: 27% 8.3% 3.9% 17.8% 3.1% 10.5% 2.5%;
+    grid-template-columns: 27% 8.3% 4% 17.8% 3% 10.5% 2.5%;
 }
 
 .dota2-grid > div {

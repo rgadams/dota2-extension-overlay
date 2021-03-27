@@ -2,6 +2,7 @@ import { Component } from "react";
 import { AbilitiesComponent } from "../abilities/abilities";
 import "./aghs.css"
 
+
 interface AghsProps {
     heroId: any,
     heroData: any
@@ -10,7 +11,7 @@ interface AghsProps {
 export class AghsComponent extends Component<AghsProps, {}> {
     heroId: any;
     heroData: any;
-    data: any = require('resources/aghanim_effects.json');
+    data: any = require('../../resources/aghanim_effects.json');
 
     constructor(props: any) {
         super(props)

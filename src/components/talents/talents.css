@@ -1,3 +1,7 @@
+.talent-tree-popup {
+    width: 100%
+}
+
 .talents-title {
     color: var(--light-grey);
     text-align: center;
@@ -8,6 +12,7 @@
 
 table {
     background-color: var(--dark-grey);
+    width: 100%;
 }
 
 .talent-tree-row {

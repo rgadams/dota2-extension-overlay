@@ -1,6 +1,6 @@
 import { Component } from "react";
-import { Item } from "types/item";
-import { NameTranslator } from "../name-translator"
+import { Item } from "../../types/item";
+import { NameTranslator } from "../../name-translator"
 import { ItemComponent } from "./item/item";
 import "./items.css"
 
@@ -10,7 +10,7 @@ interface ItemsProps {
 }
 
 export class ItemsComponent extends Component<ItemsProps, {}> {
-    items: any = require('resources/items_data.json');
+    items: any = require('../../resources/items_data.json');
     nameTranslator: NameTranslator = new NameTranslator();
     state: {
         selectedItem?: Item;

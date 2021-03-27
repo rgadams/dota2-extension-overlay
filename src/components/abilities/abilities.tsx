@@ -1,6 +1,6 @@
 import { Component } from "react";
 import "./abilities.css"
-import talent_tree from 'resources/talent_tree.png';
+import talent_tree from '../../resources/talent_tree.png';
 
 interface AbilitiesProps {
     ability: any
@@ -9,6 +9,13 @@ interface AbilitiesProps {
 export class AbilitiesComponent extends Component<AbilitiesProps, {}> {
     
     render() {
+        if (!this.props.ability) {
+            return (
+                <div className="ability">
+                    <div>Ability not found</div>
+                </div>
+            )
+        }
         return (
             <div className="ability">
                 <div className="ability-name">
