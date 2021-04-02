@@ -3,5 +3,8 @@ export interface Dota2GameData {
     abilities: string[];
     activeItems: string[];
     backpackItems: string[];
-    neutralItem: string
+    neutralItem: string;
+    talentChoices: string[];
+    consumedScepter: boolean;
+    consumedShard: boolean;
 }

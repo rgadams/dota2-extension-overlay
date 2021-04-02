@@ -6,7 +6,8 @@ import "./items.css"
 
 interface ItemsProps {
     activeItems: string[],
-    backpackItems: string[]
+    backpackItems: string[],
+    onClose: () => void
 }
 
 export class ItemsComponent extends Component<ItemsProps, {}> {
@@ -27,45 +28,41 @@ export class ItemsComponent extends Component<ItemsProps, {}> {
     }
 
     render() {
-        const activeItemList: Item[] = [...new Set(this.props.activeItems)].map((activeItem: string) => {
-            const itemName = this.translateItemName(activeItem);
-            return this.items[itemName];
+        const activeItemList: Item[] = this.props.activeItems.map((activeItem: string) => {
+            return this.items[activeItem];
         })
-        const backpackItemList: Item[] = [...new Set(this.props.backpackItems)].map((backpackItem: string) => {
-            const itemName = this.translateItemName(backpackItem);
-            return this.items[itemName];
+        const backpackItemList: Item[] = this.props.backpackItems.map((backpackItem: string) => {
+            return this.items[backpackItem];
         })
         return (
             <div className="item-info-panel">
-                <div className="item-selector">
-                    <div className="item-selector-inventory">
-                        <div className="selector-label">Inventory</div>
-                        {
-                            activeItemList.map((item: Item) => {
-                                if (item) {
-                                    return <div className={(this.isSelectedItem(item) ? "selected-item ": "") + "item-selector-option"} key={'item-selector-' + item.item_name}>
-                                        <img className="item-selector-image" src={item.image_src} alt={item.item_name} onClick={() => this.selectItemForDisplay(item)}/>
-                                    </div>
-                                } else {
-                                    return null;
-                                }
-                            })
-                        }
-                    </div>
-                    <div className="item-selector-backpack">
-                        <div className="selector-label">Backpack</div>
-                        {
-                            backpackItemList.map((item: Item) => {
-                                if (item) {
-                                    return <div className={(this.isSelectedItem(item) ? "selected-item ": "") + "item-selector-option"} key={'item-selector-' + item.item_name}>
-                                        <img className="item-selector-image" src={item.image_src} alt={item.item_name} onClick={() => this.selectItemForDisplay(item)}/>
-                                    </div>
-                                } else {
-                                    return null;
-                                }
-                            })
-                        }
-                    </div>
+                <div className="items-title">Items</div>
+                <div className="item-selector-grid">
+                    {
+                        activeItemList.map((item: Item, index: number) => {
+                            if (item) {
+                                return <div className={(this.isSelectedItem(item) ? "selected-item ": "") + "item-selector-option"} key={'item-selector-' + index}>
+                                    <img className="item-selector-image" src={item.image_src} alt={item.item_name} onClick={() => this.selectItemForDisplay(item)}/>
+                                </div>
+                            } else {
+                                return <div className="item-selector-option" key={'item-selector-' + index}/>;
+                            }
+                        })
+                    }
+                    {
+                        backpackItemList.map((item: Item, index: number) => {
+                            if (item) {
+                                return <div className={(this.isSelectedItem(item) ? "selected-item ": "") + "item-selector-option"} key={'item-selector-' + index}>
+                                    <img className="item-selector-image" src={item.image_src} alt={item.item_name} onClick={() => this.selectItemForDisplay(item)}/>
+                                </div>
+                            } else {
+                                return <div className="item-selector-option" key={'item-selector-' + index}/>;
+                            }
+                        })
+                    }
+                </div>
+                <div className="close-items-button" onClick={this.props.onClose}>
+                    Close
                 </div>
                 <div className="item-information">
                     { this.displaySelectedItem() }
@@ -96,9 +93,15 @@ export class ItemsComponent extends Component<ItemsProps, {}> {
     }
 
     selectItemForDisplay(item: Item) {
-        this.setState({
-            selectedItem: item
-        });
+        if (this.state.selectedItem !== item) {
+            this.setState({
+                selectedItem: item
+            });
+        } else {
+            this.setState({
+                selectedItem: null
+            })
+        }
     }
 
     isSelectedItem(item: Item) {

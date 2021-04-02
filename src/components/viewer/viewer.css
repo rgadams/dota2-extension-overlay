@@ -9,16 +9,14 @@ html, body, #root, #root>div {
 
 .dota2-info-popup {
     position: absolute;
-    bottom: 15em;
-    left: 1em;
+    bottom: 15%;
 }
 
 .popup {
     min-width: 15em;
     display: none;
     position: absolute;
-    left: 1%;
-    bottom: 20%
+    z-index: 1;
 }
 
 .hero {
@@ -31,7 +29,7 @@ html, body, #root, #root>div {
 }
 
 .popup-parent:hover {
-    cursor: cell;
+    cursor: pointer;
 }
 
 .popup-parent:hover > div {
@@ -45,6 +43,8 @@ html, body, #root, #root>div {
 
 .talents-popup {
     max-width: 30%;
+    left: 28%;
+    bottom: 15%;
 }
 
 .abilities {
@@ -56,6 +56,8 @@ html, body, #root, #root>div {
 
 .ability-popup {
     max-width: 25%;
+    position: absolute;
+    bottom: 15%;
 }
 
 .aghanims {
@@ -64,8 +66,10 @@ html, body, #root, #root>div {
 }
 
 .aghanims-popup {
-    max-width: 40%;
+    max-width: 30%;
     min-width: 20%;
+    left: 37%;
+    bottom: 15%;
 }
 
 .items {
@@ -85,21 +89,21 @@ html, body, #root, #root>div {
 }
 
 .items:hover {
-    background: rgb(45,45,45);
-    background: radial-gradient(circle, rgba(45,45,45,0.65) 42%, rgba(83,87,91,0.35) 75%);
     cursor: pointer;
 }
 
 .items:hover > .items-hover-text {
     display: block;
+    background-color: rgba(75, 75, 75, 0.75);
+    border-radius: 10px;
 }
 
 .items-popup {
-    max-width: 40%;
-    min-width: 15em;
     position: absolute;
-    left: 1%;
-    top: 10%;
+    bottom: 14%;
+    left: 55%;
+    max-width: 40%;
+    z-index: 0;
 }
 
 .neutrals {
@@ -130,6 +134,16 @@ html, body, #root, #root>div {
 .grid-six-abilities {
     grid-template-rows: 86.5% 7.25% 6.25%;
     grid-template-columns: 27% 8.3% 4% 17.8% 3% 10.5% 2.5%;
+}
+
+.grid-five-abilities-aghanims {
+    grid-template-rows: 86.5% 7.25% 6.25%;
+    grid-template-columns: 27.5% 8.3% 4% 16.5% 3.4% 10.5% 2.5%;
+}
+
+.grid-six-abilities-aghanims {
+    grid-template-rows: 86.5% 7.25% 6.25%;
+    grid-template-columns: 26% 8.1% 4% 20% 3.2% 10.5% 2.5%;
 }
 
 .dota2-grid > div {

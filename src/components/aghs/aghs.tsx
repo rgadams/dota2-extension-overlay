@@ -9,31 +9,25 @@ interface AghsProps {
 }
 
 export class AghsComponent extends Component<AghsProps, {}> {
-    heroId: any;
-    heroData: any;
     data: any = require('../../resources/aghanim_effects.json');
 
-    constructor(props: any) {
-        super(props)
-        this.heroId = props.heroId;
-        this.heroData = props.heroData;
-    }
-
     render() {
-        const aghsData = this.data[this.heroId];
+        const aghsData = this.data[this.props.heroId];
         return (
             <div className="aghanims-upgrades">
                 <div className="scepter-upgrade">
                     <div className="upgrade-header">
                         { this.getUpgradeIcon(true) }
-                        { this.getUpgradeHeader(aghsData.scepter_effect) }
+                         Aghanim's Scepter 
+                        { this.getUpgradePill(aghsData.scepter_effect) }
                     </div>
                     {this.getUpgrade(aghsData.scepter_effect)}
                 </div>
                 <div className="shard-upgrade">
                     <div className="upgrade-header">
                         { this.getUpgradeIcon(false) }
-                        { this.getUpgradeHeader(aghsData.shard_effect) }
+                         Aghanim's Shard 
+                        { this.getUpgradePill(aghsData.shard_effect) }
                     </div>
                     {this.getUpgrade(aghsData.shard_effect)}
                 </div>
@@ -42,14 +36,20 @@ export class AghsComponent extends Component<AghsProps, {}> {
     }
 
     getUpgrade(effect: any) {
+        const abilityData = this.props.heroData.abilities.find((a: any) => {
+            return a.ability_name === effect.ability_name;
+        })
         if (effect.type === 'ability') {
-            const abilityData = this.heroData.abilities.find((a: any) => {
-                return a.ability_name === effect.ability_name;
-            })
-            return <AbilitiesComponent ability={abilityData}></AbilitiesComponent>
+            return <AbilitiesComponent ability={abilityData} justShowDescription={true}></AbilitiesComponent>
         } else if (effect.type === 'upgrade') {
             return (
-                <div className="ability-upgrade">{effect.description}</div>
+                <div className="ability-upgrade">
+                    <div className="ability-title">
+                        <img src={ abilityData?.ability_image_url } alt={ abilityData.ability_name }/>
+                        <div>{ abilityData.ability_name}</div>
+                    </div>
+                    <div className="ability-upgrade-description">{effect.description}</div>
+                </div>
             )
         }
     }
@@ -62,11 +62,11 @@ export class AghsComponent extends Component<AghsProps, {}> {
         }
     }
 
-    getUpgradeHeader(effect: any) {
+    getUpgradePill(effect: any) {
         if (effect.type === 'ability') {
-            return <div>Grants the New Ability: <b>{effect.ability_name}</b></div>
+            return <div className="new-ability pill">New Ability</div>
         } else {
-            return <div>Upgrades the Ability: <b>{effect.ability_name}</b></div>
+            return <div className="upgrade-ability pill">Upgrade</div>
         }
     }
 }

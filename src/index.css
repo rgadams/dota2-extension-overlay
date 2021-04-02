@@ -22,10 +22,11 @@
 body {
   margin: 0;
   text-shadow: 0 0 5px black;
-  font-family: 'Mukta', sans-serif;
+  font-family: 'Mukta', sans-serif !important;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  font-size: calc(8px + 0.5vw);
+  font-size: calc(8px + 0.5vw) !important;
+  background-color: unset !important;
 }

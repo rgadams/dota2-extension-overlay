@@ -645,7 +645,7 @@
         },
         "shard_effect": {
             "type": "ability",
-            "ability_name": "Concussive Grenate"
+            "ability_name": "Concussive Grenade"
         }
     },
     "36": {
@@ -1600,7 +1600,7 @@
         "name": "Troll Warlord",
         "scepter_effect": {
             "type": "upgrade",
-            "ability_name": "Whirling Axes",
+            "ability_name": "Whirling Axes (Melee)",
             "description": "Reduces  Whirling Axes cooldown from 9 to 4 and mana cost by 50%. Causes  Whirling Axes (Ranged) to apply a basic dispel on hit enemies, and  Whirling Axes (Melee) to apply a basic dispel on self upon cast."
         },
         "shard_effect": {

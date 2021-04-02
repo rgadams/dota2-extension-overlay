@@ -1,4 +1,6 @@
-import { Component } from "react";
+import React, { Component } from "react";
+import { Accordion, Button, useAccordionToggle } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./item.css"
 
 interface ItemProps {
@@ -7,7 +9,6 @@ interface ItemProps {
 }
 
 export class ItemComponent extends Component<ItemProps, {}> {
-
     render() {
         return (
             <div className="item">
@@ -84,12 +85,24 @@ export class ItemComponent extends Component<ItemProps, {}> {
     }
 
     displayItemAbilityNotes(ability: any) {
-        if (ability.notes) {
-            return ability.notes.map((note: any, index: number) => {
-                return (<div key={index} className="item-ability-note">
-                    <b>{ note.title }:</b> { note.value }
-                </div>)
-            })
+        if (ability.notes && ability.notes.length !== 0) {
+            return (
+                <Accordion>
+                    <Accordion.Toggle className="notes-toggle" eventKey="0">Show/Hide Details</Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0">
+                        <div>
+                            {
+                                ability.notes.map((note: any, index: number) => {
+                                    return (<div key={index} className="item-ability-note">
+                                        <b>{ note.title }:</b> { note.value }
+                                    </div>
+                                )})
+                            }
+                        </div>
+                    </Accordion.Collapse>
+                </Accordion>
+            )
         }
     }
 

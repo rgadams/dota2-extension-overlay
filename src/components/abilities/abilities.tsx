@@ -3,7 +3,8 @@ import "./abilities.css"
 import talent_tree from '../../resources/talent_tree.png';
 
 interface AbilitiesProps {
-    ability: any
+    ability: any,
+    justShowDescription: boolean
 }
 
 export class AbilitiesComponent extends Component<AbilitiesProps, {}> {
@@ -13,6 +14,19 @@ export class AbilitiesComponent extends Component<AbilitiesProps, {}> {
             return (
                 <div className="ability">
                     <div>Ability not found</div>
+                </div>
+            )
+        }
+        if (this.props.justShowDescription) {
+            return (
+                <div className="ability">
+                    <div className="ability-name">
+                        <img src={ this.props.ability.ability_image_url } alt={ this.props.ability.ability_name }/>
+                        <div>{ this.props.ability.ability_name}</div>
+                    </div>
+                    <div className="ability-description">
+                        { this.props.ability.ability_info.description }
+                    </div>
                 </div>
             )
         }
@@ -89,7 +103,7 @@ export class AbilitiesComponent extends Component<AbilitiesProps, {}> {
             if (note.modifiers.type === 'Talent') {
                 return (
                     <span className="note-value">
-                        <b>{ note.title }:</b>&nbsp;
+                        <b>{ note.title }</b>&nbsp;
                         <span>
                             { note.value }
                             <img className="icon talent-icon" alt="talent" src={talent_tree}></img>
@@ -100,7 +114,7 @@ export class AbilitiesComponent extends Component<AbilitiesProps, {}> {
             } else if (note.modifiers.type === 'Upgradable by Aghanim\'s Scepter.' || note.modifiers.type === 'Upgradable by Aghanim\'s Shard.') {
                 return (
                     <span className="note-value">
-                        <b>{ note.title }:</b>&nbsp;
+                        <b>{ note.title }</b>&nbsp;
                         <span>
                             { note.value }
                             { this.displayAghsIcon(note.modifiers.type) }
@@ -110,7 +124,7 @@ export class AbilitiesComponent extends Component<AbilitiesProps, {}> {
                 )
             }
         } else {
-            return <span><b>{ note.title }:</b>&nbsp;{note.value}</span>
+            return <span><b>{ note.title }</b>&nbsp;{note.value}</span>
         }
     }
 

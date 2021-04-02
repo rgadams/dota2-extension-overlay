@@ -273,7 +273,6 @@ export class NameTranslator {
     }
     
     translateAbilityName(abilityName: string) {
-        console.log(abilityName);
         return this.correctedAbilityNames.get(abilityName) || abilityName;
     }
 
